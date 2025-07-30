@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Furniture Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="w-full px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-black-800">PhilSid</div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600">Products</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md w-48">
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Office Furniture</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Storage Solutions</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Joineries</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Window Blinds</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">School Furniture</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 ">Hotel Furniture</a></li>
+          </ul>
+        </li>
+
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600">Services</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md w-48">
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Free Consultation</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Delivery & Installation</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Warranty Products</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Sales Service</a></li>
+          </ul>
+        </li>
+
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600">Categories</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md w-48">
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b" >Reception</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 border-b">Workstations</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Conference Rooms</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#about" class="hover:text-green-600">About Us</a></li>
+        <li><a href="#contact" class="hover:text-green-600">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="pl-4 pr-6 py-12 md:py-20 bg-gradient-to-r from-white to-gray-100" style="background-image: url('bgpic.jpg');">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+    <!-- Left Column: Video -->
+    <div class="space-y-6 md:pl-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-800">
+        <span class="text-green-600">Discover</span> the <br />
+        best <span class="text-green-600">furnitures</span>
+      </h1>
+      <p class="text-gray-600 text-lg">
+        This is the best place to buy furniture to make your space beautiful.
+      </p>
+      <video controls class="w-full h-[300px] rounded-lg shadow-md">
+        <source src="philsidvid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="pt-2">
+        <a href="try.html.html" class="bg-white border border-green-600 text-green-600 px-6 py-2 rounded-md hover:bg-green-100 transition">
+          Explore More
+        </a>
+      </div>
+    </div>
+
+    <!-- Middle Column: Featured Images Carousel -->
+<div class="flex flex-col items-center justify-center space-y-4">
+  
+  <div class="relative w-full h-[500px] overflow-hidden rounded-lg shadow-lg max-w-full">
+    <div id="slides" class="flex transition-transform duration-500 ease-in-out h-full">
+      <img src="f1.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Featured 1">
+      <img src="f2.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Featured 2">
+      <img src="f3.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Featured 3">
+      <img src="f4.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Featured 4">
+      <img src="f5.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Featured 5">
+    </div>
+  </div>
+  <!-- Navigation Buttons -->
+  <div class="flex justify-center gap-4">
+    <button onclick="prevSlide()" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">←</button>
+    <button onclick="nextSlide()" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">→</button>
+  </div>
+</div>
+
+
+    <!-- Right Column: Static Image -->
+    <div class="flex justify-center"> 
+      <img
+        src="rightpic.jpg"
+        alt="Living Room Furniture"
+        class="w-full h-[700px] rounded-xl shadow-lg object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Carousel Script -->
+<script>
+  let currentIndex = 0;
+  const slides = document.getElementById('slides');
+  const totalSlides = slides.children.length;
+
+  function updateCarousel() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+</script>
+
+
+  <!-- About Us Section -->
+  <section id="about" class="px-6 py-16 bg-blue-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">About Us</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        PhilSid Concept & Design Commercial Inc. is a dynamic and innovative affiliate of World Solution Technology Inc., specializing in office design and renovation.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Our dedicated team brings a wealth of experience and expertise in the field of office design, ensuring our clients receive cutting-edge solutions tailored to their unique needs.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Top Clients Section -->
+<section id="clients" class="px-6 py-16 bg-blue-50">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Our Top Clients</h2>
+    <div class="flex flex-wrap justify-center gap-8">
+      
+      <!-- Client 1 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+          <img src="client1.jpg" alt="Client 1" class="w-full h-full object-cover">
+        </div>
+        <p class="text-sm font-medium text-gray-700">Province of Nueva Vizcaya</p>
+      </div>
+
+      <!-- Client 2 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+          <img src="client2.jpg" alt="Client 2" class="w-full h-full object-cover">
+        </div>
+        <p class="text-sm font-medium text-gray-700">Veterans Memorial Medical Center(MCMLV)</p>
+      </div>
+
+      <!-- Client 3 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+          <img src="client3.jpg" alt="Client 3" class="w-full h-full object-cover">
+        </div>
+        <p class="text-sm font-medium text-gray-700">Asian Land</p>
+      </div>
+
+      <!-- Client 4 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+          <img src="client4.jpg" alt="Client 4" class="w-full h-full object-cover">
+        </div>
+        <p class="text-sm font-medium text-gray-700">CEMEX</p>
+      </div>
+
+      <!-- Client 5 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+          <img src="client5.jpg" alt="Client 5" class="w-full h-full object-cover">
+        </div>
+        <p class="text-sm font-medium text-gray-700">COMPiQ</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="px-6 py-16 bg-blue-100">
+    <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">Contact Us</h3>
+    <div class="max-w-4xl mx-auto text-center text-gray-800">
+      <p><strong>📍 Address:</strong> 32 Pilar St. Corner, Araullo, St. Addition Hills, San Juan City, Metro Manila</p>
+      <p><strong>📞 Phone:</strong> 0962‑770‑2801</p>
+      <p><strong>📧 Email:</strong> <a href="mailto:philisidconceptdesign@gmail.com" class="text-blue-700 hover:underline">philisidconceptdesign@gmail.com</a></p>
+    </div>
+  </section>
+
+</body>
+</html>

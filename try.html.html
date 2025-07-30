@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhilSid Concept & Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap md:flex-nowrap">
+
+    <!-- Left section: PhilSid + Search -->
+<div class="flex items-center space-x-4 mb-2 md:mb-0">
+  <h1 class="text-2xl font-bold text-blue-800">PhilSid</h1>
+  <form action="#" method="GET" class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+    <input 
+      type="text" 
+      name="search" 
+      placeholder="Search..." 
+      class="px-3 py-1 w-40 md:w-60 outline-none"
+    />
+    <button type="submit" class="bg-blue-600 text-white px-3 py-1 hover:bg-blue-700">
+      Search
+    </button>
+  </form>
+</div>
+
+<!-- Middle section: Tagline -->
+<div class="w-full md:flex justify-center hidden md:block mb-2 md:mb-0">
+  <span class="text-blue-700 font-semibold text-lg italic">Every Space Matters</span>
+</div>
+
+
+    <!-- Right section: Hamburger Menu -->
+    <div class="relative">
+      <button id="menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        <!-- Hamburger icon (3 lines) -->
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div id="menu-dropdown" class="hidden absolute right-0 mt-2 w-72 bg-white border rounded-lg shadow-lg text-left z-50">
+        <a href="#consultation" class="block px-4 py-3 hover:bg-blue-50 border-b">Free Consultation</a>
+        <a href="#delivery" class="block px-4 py-3 hover:bg-blue-50 border-b">Delivery & Installation</a>
+        <a href="#warranty" class="block px-4 py-3 hover:bg-blue-50 border-b">Warranty Products</a>
+        <a href="#sales" class="block px-4 py-3 hover:bg-blue-50">Sales Service</a>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- JavaScript to toggle menu -->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const dropdown = document.getElementById('menu-dropdown');
+
+  toggleBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+  });
+
+  // Optional: close dropdown when clicking outside
+  window.addEventListener('click', function (e) {
+    if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+</script>
+ 
+
+   
+  </section>
+
+  <!-- Products & Services -->
+  <section id="services" class="py-1 px-4 md:px-20 bg-white">
+  <h3 class="text-3xl font-bold text-blue-900 mb-6 text-left">Products & Services</h3>
+  
+  <!-- ... your 6 boxes stay the same ... -->
+</section>
+
+    
+    <!-- 6 Feature Boxes with Clickable Images -->
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  <!-- Box 1 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product1" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="Office Furnitures" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">Office Furnitures</h4>
+      <p class="text-gray-600 text-sm">We provide a wide selection of office furniture, including ergonomic office chairs, executive desks, modular workstations and conference tables.
+         Our Furniture is designed to enhance comfort, functionality, and productivity in the workplace.</p>
+    </div>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product2" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="Window Blinds" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">Window Blinds</h4>
+      <p class="text-gray-600 text-sm">Stylish and functional window blinds designed to control light, ensure privacy, and enhance any space's aethetic appeal.</p>
+    </div>
+  </div>
+
+  <!-- Box 3 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product3" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="Storage Solutions" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">Storage Solutions</h4>
+      <p class="text-gray-600 text-sm">We offer customizable shelving and storage solutions that optimize space utilization and organization, enhancing the efficiency of any workspace.</p>
+    </div>
+  </div>
+
+  <!-- Box 4 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product4" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="School Furnitures" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">School Furnitures</h4>
+      <p class="text-gray-600 text-sm">Our educational furniture solutions are designed to create engaging and conducive learning environments for students of all ages.</p>
+    </div>
+  </div>
+
+  <!-- Box 5 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product5" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="Joineries" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">Joineries</h4>
+      <p class="text-gray-600 text-sm">Custom-crafted joineries designed to optimize space, enhance functionality, and add a refined touch to any environment.</p>
+    </div>
+  </div>
+
+  <!-- Box 6 -->
+  <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-lg shadow-sm">
+    <a href="https://example.com/product6" target="_blank">
+      <img src="https://via.placeholder.com/80" alt="Hotel Furnitures" class="w-20 h-20 rounded-md object-cover hover:opacity-90 transition" />
+    </a>
+    <div>
+      <h4 class="font-semibold text-blue-800">Hotel Furnitures</h4>
+      <p class="text-gray-600 text-sm">We specialize in providing hospitality establishments with elegant and durable hotel furniture that enhances the guest experience</p>
+    </div>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 px-4 md:px-20 bg-gray-100">
+  <h3 class="text-3xl font-bold text-blue-900 mb-6 text-left">About Us</h3>
+  
+  <p class="text-gray-700 text-lg max-w-3xl mb-4">
+    PhilSid Concept & Design Commercial Inc. is a dynamic and innovative affiliate of World SOlution Technology Inc., specializing
+    in office design, renovation, and the provision of high-quality furniture solutions. With a commitment to delivering exceptional
+    design concepts and top-notch furniture products, we empower  businesses, schoos, hotels, and individuals to create functional
+    and aesthetically pleasing environments that inspire productivity and comfort.
+  </p>
+  <p class="text-gray-700 text-lg max-w-3xl mb-10">
+    <strong>Our Team: </strong> Our dedicated team brings a wealth of experience and expertise in the field of office design and renovation.
+    Comprising professionals with diverse backgrounds in interior design, architecture, and project management, we possess the necessary 
+    skills to transform your vision into reality. Our team is attuned to the latest trends and timeless classics in office design and
+    construction, ensuring that our clients receive cutting-edge solutions tailored to their unique needs.
+  </p>
+
+  <!-- Top Clients Section -->
+  <h4 class="text-2xl font-semibold text-blue-800 mb-4 text-left">Top Clients</h4>
+  
+  <div class="flex flex-wrap gap-4 md:gap-8">
+    <!-- Client 1 -->
+    <div class="w-20 h-20 rounded-full bg-white border border-gray-300 overflow-hidden shadow-sm">
+      <img src="nueva.jpg" alt="Client 1" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Client 2 -->
+    <div class="w-20 h-20 rounded-full bg-white border border-gray-300 overflow-hidden shadow-sm">
+      <img src="veterans.jpg" alt="Client 2" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Client 3 -->
+    <div class="w-20 h-20 rounded-full bg-white border border-gray-300 overflow-hidden shadow-sm">
+      <img src="asianland.jpg" alt="Client 3" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Client 4 -->
+    <div class="w-40 h-20 bg-white border border-gray-300 overflow-hidden shadow-sm">
+      <img src="cemex.jpg" alt="Client 4" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Client 5 -->
+    <div class="w-70 h-20  bg-white border border-gray-300 overflow-hidden shadow-sm">
+      <img src="compiq.jpg" alt="Client 5" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact & Connect Section -->
+<section id="contact" class="py-16 px-6 md:px-20 bg-white">
+  <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-12">
+
+    <!-- Contact Us (Left) -->
+    <div class="md:w-1/2">
+      <h3 class="text-3xl font-bold text-blue-900 mb-6 text-left">Contact Us</h3>
+      <div class="text-gray-700 text-lg space-y-3">
+        <p><strong>📍 Address:</strong> 32 Pilar St. Corner, Araullo, St. Addition Hills, San Juan City, 1500 Metro Manila</p>
+        <p><strong>📞 Contact No:</strong> 09627702801</p>
+        <p><strong>📧 Email:</strong> 
+          <a href="mailto:philisidconceptdesign@gmail.com" class="text-blue-600 hover:underline">
+            philisidconceptdesign@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Connect with Us (Right) -->
+<div class="md:w-1/2">
+  <h3 class="text-3xl font-bold text-blue-900 mb-6 text-left">Connect with Us</h3>
+  <div class="text-gray-700 text-lg space-y-4">
+    
+    <p class="flex items-center space-x-3">
+      <!-- Facebook Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24" >
+        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-3v-3h3v-2.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.3h3.4l-.5 3h-2.9v7A10 10 0 0 0 22 12z"/>
+      </svg>
+      <a href="https://www.facebook.com/profile.php?id=61569479197133#" class="text-blue-600 hover:underline">Facebook</a>
+    </p>
+
+    <p class="flex items-center space-x-3">
+      <!-- LinkedIn Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24" >
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm.02 4.75h-3v12h3v-12zm7.5 0h-3v12h3v-6a3 3 0 0 1 6 0v6h3v-7a6 6 0 0 0-6-6z"/>
+      </svg>
+      <a href="https://ph.linkedin.com/company/philsidconceptndesign" class="text-blue-600 hover:underline">LinkedIn</a>
+    </p>
+
+    <p class="flex items-center space-x-3">
+      <!-- Instagram Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+      </svg>
+      <a href="https://www.instagram.com/philsidconceptanddesign/" class="text-blue-600 hover:underline">Instagram</a>
+    </p>
+
+    <p class="flex items-center space-x-3">
+      <!-- TikTok Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18a6 6 0 0 1-6-6v-3"/>
+        <path d="M15 6h3a6 6 0 0 1 0 12"/>
+        <path d="M15 9a3 3 0 0 1-3-3v9"/>
+      </svg>
+      <a href="https://www.tiktok.com/@philsid.furniture" class="text-blue-600 hover:underline">TikTok</a>
+    </p>
+
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-6">
+    <div class="container mx-auto px-6 text-center space-y-2">
+      <div class="flex justify-center gap-4">
+      </div>
+      <p class="text-sm">© 2023 PhilSid Concept & Design Commercial Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
