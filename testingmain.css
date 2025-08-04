@@ -9,7 +9,11 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #667eea;
+    background-image: url(H1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -38,12 +42,33 @@ body {
     height: 70px;
 }
 
-.nav-logo .logo-text {
-    font-size: 24px;
-    font-weight: 500;
-    color: #333;
-    text-decoration: none;
+.nav-logo {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.2;
 }
+
+.nav-logo a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  text-align: left;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+.logo-sub {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #7f8c8d;
+  line-height: 1.1;  /* Tighter line spacing */
+  display: inline-block;
+}
+
 
 .nav-menu {
     display: flex;
@@ -126,10 +151,6 @@ body {
     color: #667eea;
 }
 
-
-
-
-
 .btn-request {
     background: #333;
     border: none;
@@ -187,19 +208,23 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: 22vw;
+    font-weight: 900;
+    line-height: 0.8;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    text-align: center;
+    white-space: nowrap;
+  
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1;
     margin-bottom: 2.5rem;
     opacity: 0.9;
+    color: white;
 }
 
 .hero-actions {
@@ -677,7 +702,7 @@ button:focus,
 }
 /* Features Section */
 .features-section {
-    background: #667eea;
+    background: transparent;
     padding: 5rem 2rem;
 }
 .features-container {
@@ -691,7 +716,7 @@ button:focus,
 .features-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: whitesmoke;
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
@@ -775,7 +800,7 @@ button:focus,
 }
 .footer-nav-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     gap: 2rem;
 }
 .footer-nav-column h4 {
@@ -784,14 +809,12 @@ button:focus,
     color: #333;
     margin-bottom: 1rem;
 }
-.footer-nav-column ul {
+.footer-nav-column p {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.footer-nav-column li {
-    margin-bottom: 0.75rem;
-}
+
 .footer-nav-column a {
     color: #666;
     text-decoration: none;
@@ -1005,7 +1028,7 @@ button:focus,
 
 .carousel-btn {
   background: rgba(0,0,0,0.5);
-  border: none;
+  border: #666;
   color: white;
   font-size: 2rem;
   padding: 0 15px;
@@ -1152,9 +1175,10 @@ button:focus,
         }
 
         .custom-line {
-    height: 2px;
-    background-color: #333; /* Change to any color */
+    height: 7px;
+    background-color: whitesmoke; /* Change to any color */
     width: 100%;
     margin: 2rem 0;          /* Optional spacing above/below */
     border: none;
 }
+
