@@ -3,249 +3,564 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron & Steel - Industrial Furniture</title>
-
+    <link rel="icon" href="https://i.postimg.cc/3JvX2F9a/philsid-logo.png" type="image/x-icon">
+    <title>Office Furniture | PhilSid Concept & Design</title>
     <link rel="stylesheet" href="opisina.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <header>
         <nav class="container">
-            <div class="logo">Iron & Steel</div>
-        </nav>
+           <a href="index.html" class="nav-logo">
+                <span class="logo-text">PhilSid</span><br>
+                <span class="logo-sub">Concept & Design Inc.</span>
+            </a>
+            <span class="tagline">Every Space matters.</span>
+            
+            <ul class="nav-menu">
+            <li class="nav-item">
+                        <a href="#aboutUs" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactForm" class="nav-link">Contact Us</a>
+                    </li>
+                    </ul>
+
+                    <div class="nav-actions">
+                    <div class="search-bar-container" id="searchBar">
+                        <input type="text" placeholder="What are you looking for?" class="search-input">
+                        <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
     </header>
 
-    <section class="gallery" id="workshop">
-        <div class="container">
-            <h2>Office Furnitures</h2>
-            
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all">all</button>
-                <button class="filter-tab active" data-filter="seating">Chairs</button>
-                <button class="filter-tab" data-filter="sofa&lounge">Sofa and Lounges</button>
-                <button class="filter-tab" data-filter="public">Public Seating</button>
-                <button class="filter-tab" data-filter="tables&work">Tables and Workspace</button>
-                <button class="filter-tab" data-filter="tables">Tables</button>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Office Furniture Collection</h1>
+                <p>Discover our curated selection of high-quality, ergonomic, and stylish furniture designed to elevate any modern workspace.</p>
             </div>
-
-            <div class="product-grid">
-                <div class="product-card" data-category="seating">
-                    <div class="product-image-container">
-                        <img src="C-OF-d-5009a.jpg" alt="Industrial Bar Stool" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Steel Bar Stool</h3>
-                        <p class="product-description">Welded steel frame with reclaimed wood seat. Built for commercial use.</p>
-                        <div class="product-price">$189</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
+           <div class="hero-actions">
+                    <a href="#gallery" class="explore-btn">Explore Now</a>
                 </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2>Our Products</h2>
+                <p class="gallery-intro">
+                    From executive chairs to collaborative workstations, our pieces are crafted for comfort, durability, and aesthetic appeal. Filter by category to find exactly what you need.
+                </p>
                 
-
-
-                <div class="product-card" data-category="seating">
-                    <div class="product-image-container">
-                        <img src="C-OF-d-5015a.jpg" alt="Industrial Dining Table" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Factory Table</h3>
-                        <p class="product-description">Heavy-duty steel base with thick butcher block top</p>
-                        <div class="product-price">$799</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="seating">
-                    <div class="product-image-container">
-                        <img src="C-OF-d-350b.jpg" alt="Industrial Pendant" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Factory Light</h3>
-                        <p class="product-description">Authentic warehouse pendant with exposed Edison bulb</p>
-                        <div class="product-price">$149</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="storage">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Metal Locker" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Steel Locker</h3>
-                        <p class="product-description">Industrial-grade storage with reinforced doors</p>
-                        <div class="product-price">$349</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="seating">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Welded Chair" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Welded Frame Chair</h3>
-                        <p class="product-description">Hand-welded steel with leather cushioning</p>
-                        <div class="product-price">$299</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="tables">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Workbench Table" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Workbench Coffee Table</h3>
-                        <p class="product-description">Converted workshop bench with tool storage</p>
-                        <div class="product-price">$549</div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all" aria-label="Show all products">All</button>
+                    <button class="filter-tab" data-filter="seating" aria-label="Filter by Chairs">Chairs</button>
+                    <button class="filter-tab" data-filter="sofa&lounge" aria-label="Filter by Sofa & Lounges">Sofa & Lounges</button>
+                    <button class="filter-tab" data-filter="public" aria-label="Filter by Public Seating">Public Seating</button>
+                    <button class="filter-tab" data-filter="tables&work" aria-label="Filter by Tables & Workspaces">Tables & Workspaces</button>
+                    <button class="filter-tab" data-filter="tables" aria-label="Filter by Tables">Tables</button>
                 </div>
 
                 <div class="product-grid">
-                <div class="product-card" data-category="seating">
-                    <div class="product-image-container">
-                        <img src="C-OF-386b.jpg" alt="Industrial Bar Stool" class="product-image">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
+                    <!-- Seating -->
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-386b.jpg" alt="Modern Office Chair 386B" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 386B">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">386B</h3>
+                            <p class="product-description">Ergonomic design with breathable mesh back and adjustable lumbar support.</p>
+                            <div class="product-price">Price Upon Request</div>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Steel Bar Stool</h3>
-                        <p class="product-description">Welded steel frame with reclaimed wood seat. Built for commercial use.</p>
-                        <div class="product-price">$189</div>
-                        <button class="add-to-cart">Add to Cart</button>
+                    
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-387d.jpg" alt="Executive Leather Chair 387D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 387D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">387D</h3>
+                            <p class="product-description">High-back executive chair with premium leather and polished aluminum base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-8006d.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">8006D</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-825c.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">825C</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-bt003b.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">BT003B</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-d-350b.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">D-350B</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-d-5009a.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">D-5009A</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="seating">
+                        <div class="product-image-container">
+                            <img src="C-OF-xb016b.jpg" alt="Visitor Chair 8006D" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for product 8006D">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">XB016B</h3>
+                            <p class="product-description">Sleek and durable visitor chair with a cantilever base.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <!-- Sofa & Lounges -->
+                    <div class="product-card" data-category="sofa&lounge">
+                        <div class="product-image-container">
+                            <img src="SLC-OF.jpg" alt="Modular Office Sofa" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Modular Office Sofa">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sofa 1</h3>
+                            <p class="product-description">Versatile and comfortable modular sofa for reception and lounge areas.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="sofa&lounge">
+                        <div class="product-image-container">
+                            <img src="SLC-OF2.jpg" alt="Lounge Armchair S-1568" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Lounge Armchair S-1568">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">S-1568</h3>
+                            <p class="product-description">A stylish armchair perfect for breakout spaces and informal meetings.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="sofa&lounge">
+                        <div class="product-image-container">
+                            <img src="SLC-OF3.jpg" alt="Lounge Armchair S-1568" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Lounge Armchair S-1568">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sofa 2</h3>
+                            <p class="product-description">A stylish armchair perfect for breakout spaces and informal meetings.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card" data-category="sofa&lounge">
+                        <div class="product-image-container">
+                            <img src="SLC-OF4.jpg" alt="Lounge Armchair S-1568" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Lounge Armchair S-1568">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">S-1515</h3>
+                            <p class="product-description">A stylish armchair perfect for breakout spaces and informal meetings.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Public Seating -->
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF3.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF4.5.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF6.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF7.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="public">
+                        <div class="product-image-container">
+                            <img src="PS-OF8.jpg" alt="Public Gang Chair" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Public Gang Chair">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Public Gang Chair</h3>
+                            <p class="product-description">Durable and space-efficient seating for waiting areas and public spaces.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <!-- Tables & Workspaces -->
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF1.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF2.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF3.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF4.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF5.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables&work">
+                        <div class="product-image-container">
+                            <img src="TW-OF6.jpg" alt="Executive Office Desk" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Executive Office Desk">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Executive Office Desk</h3>
+                            <p class="product-description">A large, modern desk with integrated storage and cable management.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <!-- Tables -->
+                    <div class="product-card" data-category="tables">
+                        <div class="product-image-container">
+                            <img src="TABLE.jpg" alt="Round Meeting Table" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Round Meeting Table">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Round Meeting Table</h3>
+                            <p class="product-description">A minimalist round table perfect for small team collaborations.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables">
+                        <div class="product-image-container">
+                            <img src="TABLE2.jpg" alt="Round Meeting Table" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Round Meeting Table">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Round Meeting Table</h3>
+                            <p class="product-description">A minimalist round table perfect for small team collaborations.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables">
+                        <div class="product-image-container">
+                            <img src="TABLE3.jpg" alt="Round Meeting Table" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Round Meeting Table">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Round Meeting Table</h3>
+                            <p class="product-description">A minimalist round table perfect for small team collaborations.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tables">
+                        <div class="product-image-container">
+                            <img src="TABLE4.jpg" alt="Round Meeting Table" class="product-image">
+                            <div class="product-overlay">
+                                <button class="quick-view" aria-label="Quick view for Round Meeting Table">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Round Meeting Table</h3>
+                            <p class="product-description">A minimalist round table perfect for small team collaborations.</p>
+                            <div class="product-price">Price Upon Request</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Product Modal -->
-    <div id="productModal" class="modal">
+    <div id="productModal" class="modal" role="dialog" aria-modal="true">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <button class="close-modal-btn" aria-label="Close dialog">&times;</button>
             <div class="modal-details">
-                <div>
-                    <img id="modalImage" src="" alt="" class="modal-image">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Product image in modal view" class="modal-image">
                 </div>
-                <div>
+                <div class="modal-info-container">
                     <h2 id="modalTitle" class="modal-title"></h2>
                     <p id="modalDescription" class="modal-description"></p>
                     <div id="modalPrice" class="modal-price"></div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart-modal">Add to Inquiry</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>© PhilSid Concept & Design Commercial Inc.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-navigation">
+                    <div class="footer-logo">
+                        <a href="#" class="nav-logo">
+                            <span class="logo-text">PhilSid</span><br>
+                            <span class="logo-sub">Concept & Design Inc.</span>
+                        </a>
+                    </div>
+                    <div class="footer-nav-grid">
+                        <div class="footer-nav-column" id="aboutUs">
+                            <h4>About Us</h4>
+                            <p>PhilSid Concept & Design Commercial Inc. is a dynamic affiliate of the World Solution Technology Group, specializing in comprehensive solutions for the furniture industry. Our mission is to deliver high-quality, sustainable, and stylish furniture that meets the diverse needs of our clients.</p>
+                        </div>
+                    </div>
+                    <section class="partners-section">
+                        <h4 class="partners-title">Our Top Clients</h4>
+                        <div class="partners-container">
+                            <div class="partners-logos">
+                                <div class="partner-logo"><img src="1nueva.jpg" alt="Nueva Vizcaya"></div>
+                                <div class="partner-logo"><img src="2mcm.jpg" alt="MCMLV"></div>
+                                <div class="partner-logo"><img src="3asian.jpg" alt="Asian Land"></div>
+                                <div class="partner-logo"><img src="4cemex.jpg" alt="Cemex"></div>
+                                <div class="partner-logo"><img src="5compiq.jpg" alt="Compiq"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="footer-social">
+                        <p>Follow us</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/company/philsidconceptndesign/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/philsidconceptanddesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61569479197133" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@philsid.furniture" target="_blank" rel="noopener noreferrer" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <div class="contact-form" id="contactForm">
+                        <h3>Contact Us</h3>
+                        <form class="contact-form-fields" id="contact-google-form">
+                            <div class="form-row">
+                                <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" name="firstName" required></div>
+                                <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" name="lastName" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+                                <div class="form-group"><label for="company">Company Name *</label><input type="text" id="company" name="company" required></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required></div>
+                                <div class="form-group">
+                                    <label for="topic">Select your topic *</label>
+                                    <select id="topic" name="topic" required>
+                                        <option value="" disabled selected>Please Select</option>
+                                        <option value="quote">Request a Quote</option>
+                                        <option value="pricing">Pricing Information</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="partnership">Partnership</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group full-width"><label for="message">Message *</label><textarea id="message" name="message" rows="4" required></textarea></div>
+                            <div class="form-group full-width"><label for="hearAbout">How did you hear about us?</label><input type="text" id="hearAbout" name="hearAbout"></div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 PhilSid Concept & Design Commercial Inc. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Filter functionality
-        const filterTabs = document.querySelectorAll('.filter-tab');
-        const productCards = document.querySelectorAll('.product-card');
+    <a href="#" class="scroll-to-top" id="scrollTopBtn" title="Go to top" aria-label="Scroll to top of the page">↑</a>
 
-        filterTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                filterTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                const filter = tab.getAttribute('data-filter');
-
-                productCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Modal functionality
-        const modal = document.getElementById('productModal');
-        const closeModal = document.querySelector('.close');
-
-        productCards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (e.target.classList.contains('add-to-cart') || e.target.classList.contains('quick-view')) return;
-                
-                const title = card.querySelector('.product-title').textContent;
-                const description = card.querySelector('.product-description').textContent;
-                const price = card.querySelector('.product-price').textContent;
-                const image = card.querySelector('.product-image').src;
-
-                document.getElementById('modalTitle').textContent = title;
-                document.getElementById('modalDescription').textContent = description;
-                document.getElementById('modalPrice').textContent = price;
-                document.getElementById('modalImage').src = image;
-
-                modal.style.display = 'block';
-            });
-        });
-
-        // Quick view functionality
-        document.querySelectorAll('.quick-view').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const card = e.target.closest('.product-card');
-                card.click();
-            });
-        });
-
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-
-        // Cart functionality
-        let cartCount = 0;
-        const cartIcon = document.querySelector('.cart-icon');
-
-        document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.stopPropagation();
-                cartCount++;
-                cartIcon.textContent = `Cart (${cartCount})`;
-                
-                button.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                button.textContent = 'Added!';
-                
-                setTimeout(() => {
-                    button.style.background = 'linear-gradient(135deg, #ff6b35, #f7931e)';
-                    button.textContent = 'Add to Cart';
-                }, 1200);
-            });
-        });
-    </script>
+    <script src="opisina.js" defer></script>
 </body>
 </html>
